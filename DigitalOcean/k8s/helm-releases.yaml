@@ -1,0 +1,22 @@
+---
+releases:
+  - id: 'argocd'
+    enabled: true
+    chart: 'argo-cd'
+    repository: 'https://argoproj.github.io/argo-helm'
+    chart_version: '5.43.4'
+  - id: 'argocd-app'
+    enabled: true
+    chart: './helm-charts/argocd-app'
+    repository:
+    chart_version: '0.0.1'
+  - id: 'argocd-infra'
+    enabled: true
+    chart: './helm-charts/argocd-app'
+    repository:
+    chart_version: '0.0.1'
+  - id: 'argocd-image-updater'
+    enabled: true
+    chart: 'argocd-image-updater'
+    repository: 'https://argoproj.github.io/argo-helm'
+    chart_version: '0.9.1'

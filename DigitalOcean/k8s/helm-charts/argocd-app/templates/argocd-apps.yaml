@@ -1,0 +1,19 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: {{ .Values.name }}
+  namespace: argo-cd
+spec:
+  project: {{ .Values.project }}
+  destination:
+    namespace: {{ .Values.namespace }}
+    server: {{ .Values.server }}
+  source:
+    path: {{ .Values.path }}
+    repoURL: {{ .Values.repoUrl }}
+    targetRevision: {{ .Values.targetRevision }}
+  syncPolicy:
+    automated:
+      prune: {{ .Values.prune }}
+      selfHeal: {{ .Values.selfHeal }}

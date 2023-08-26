@@ -1,0 +1,10 @@
+---
+name: 'app'
+project: 'default'
+namespace: 'argo-cd'
+server: ' '
+path: ''
+repoUrl: ''
+targetRevision: 'HEAD'
+prune: true
+selfHeal: true
