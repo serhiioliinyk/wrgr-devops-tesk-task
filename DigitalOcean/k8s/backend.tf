@@ -9,4 +9,7 @@ terraform {
     skip_credentials_validation = true
     skip_metadata_api_check     = true
   }
+  # These variables need to be set for access to a bucket(in DO it is named spaces). In this bucket(spaces) we save tfstate file. This secret is general for the project.
+  access_key = ""
+  secret_key = ""
 }
