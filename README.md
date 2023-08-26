@@ -26,6 +26,7 @@ You are tasked with setting up an infrastructure environment on Amazon Web Servi
 This test task consists of two repositories:
 - a [repository](https://github.com/serhiioliinyk/wrgr-devops-tesk-task) that stores the configuration for deploying a Kubernetes cluster in the Hashicorp Configuration Language language;
 - a [repository](https://github.com/serhiioliinyk/tf-argocd-infrastructure) that stores configuration files for deploying PostgreSQL, Kafka, Zookeeper, HashiCorp Vault, Nginx using the previously deployed ArgoCD.
+
 ### Kubernetes cluster
 This infrastructure approach demonstrates the using of tfvars as a variable entry point. The module itself can be used for different environments by simply adding a custom file with variables.
 In this implementation, the resources do not have a hardcode, the values for variables are obtained from tfwars.
