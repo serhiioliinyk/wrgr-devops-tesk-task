@@ -18,7 +18,7 @@ You are tasked with setting up an infrastructure environment on Amazon Web Servi
     - [x] ArgoCD
 - [x] Define the infrastructure setup in Terraform, including the required resources, security groups, networking, etc.
 - [x] Use Terraform's state management to keep track of the deployed resources.
-- [ ] Create a manifest or configuration files for each service that capture the necessary settings and configurations.
+- [x] Create a manifest or configuration files for each service that capture the necessary settings and configurations.
 - [ ] Provide clear documentation or comments explaining the purpose and functionality of each component in the Terraform code.
 - [ ] Demonstrate an understanding of Terraform best practices and module usage where applicable.
 - [ ] It's not necessary to actually deploy the services but to showcase how they would be deployed and managed.
