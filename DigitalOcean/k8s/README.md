@@ -40,4 +40,5 @@ No modules.
 |------|-------------|
 | <a name="output_cluster_edpoint"></a> [cluster\_edpoint](#output\_cluster\_edpoint) | n/a |
 | <a name="output_cluster_id"></a> [cluster\_id](#output\_cluster\_id) | n/a |
+
 <!-- END_TF_DOCS -->
