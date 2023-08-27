@@ -2,7 +2,7 @@
 name: 'app'
 project: 'default'
 namespace: 'argo-cd'
-server: ' '
+server: ''
 path: ''
 repoUrl: ''
 targetRevision: 'HEAD'
