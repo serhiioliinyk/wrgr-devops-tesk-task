@@ -42,7 +42,7 @@ global:
     service: infrastructure
 configs:
   cm:
-    admin.enabled: false
+    admin.enabled: true
     url: https://${local.argocd_domain_name}
     dex.config: |
       connectors:
