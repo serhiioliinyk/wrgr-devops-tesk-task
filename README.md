@@ -24,7 +24,7 @@ You are tasked with setting up an infrastructure environment on Amazon Web Servi
 
 ## Implementation Notes
 This test task consists of two repositories:
-- a [repository](https://github.com/serhiioliinyk/wrgr-devops-tesk-task) that stores the configuration for deploying a Kubernetes cluster in the Hashicorp Configuration Language language;
+- a [repository](https://github.com/serhiioliinyk/wrgr-devops-tesk-task) that stores the configuration for deploying a Kubernetes cluster and ArgoCD tool, written with the Hashicorp Configuration Language (HCL);
 - a [repository](https://github.com/serhiioliinyk/tf-argocd-infrastructure) that stores configuration files for deploying PostgreSQL, Kafka, Zookeeper, HashiCorp Vault, Nginx using the previously deployed ArgoCD.
 
 ### Kubernetes cluster
