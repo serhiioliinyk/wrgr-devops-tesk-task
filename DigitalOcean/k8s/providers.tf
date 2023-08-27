@@ -1,3 +1,7 @@
+provider "digitalocean" {
+  token = var.do_token
+}
+
 provider "kubernetes" {
   host  = digitalocean_kubernetes_cluster.kubernetes_cluster.endpoint
   token = digitalocean_kubernetes_cluster.kubernetes_cluster.kube_config[0].token

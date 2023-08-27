@@ -1,3 +1,7 @@
+variable "do_token" {
+  type = string
+  description = "DO Access token"
+}
 # Cluster variables
 variable "name" {
   type        = string
