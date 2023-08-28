@@ -105,6 +105,52 @@ If all goes well you should see:
 ```bash
 Terraform has been successfully initialized!
 ```
+
+### Define values in terraform.tfvars
+
+Here is example of `terraform.tfvars` values:
+
+```hcl
+region = "nyc3"
+
+node_pool = {
+  name       = "main"
+  size       = "s-1vcpu-2gb"
+  auto_scale = false
+  node_count = "2"
+}
+services_node_pool = {
+  infrastructure = {
+    size       = "s-2vcpu-4gb"
+    auto_scale = true
+    min_nodes  = "2"
+    max_nodes  = "10"
+    tags       = "infrastructure-dev"
+    labels     = {
+      service = "infrastructure"
+    }
+  }
+}
+
+name                     = "cluster"
+env                      = "dev"
+version_k8s              = "1.27.4-do.0"
+ha                       = true
+enabled_argocd           = true
+tags                     = "k8s"
+argocd_repo_url          = "https://github.com/serhiioliinyk/tf-argocd-infrastructure.git"
+argocd_domain_name       = "argo.dev.test.domain"
+ca_api_key               = ""
+github_username          = "username_example"
+github_password          = "passwd"
+registry_server          = "https://registry-1.docker.io"
+registry_username        = "username_example"
+registry_password        = "passwd"
+registry_email           = "email@example"
+docker_creds_secret_name = "dockerhub-secret"
+argocd_namespace         = "argo-cd"
+```
+
 ### Deploy K8S Cluster with ArgoCD
 
 Jump to directory with `*.tf` configuration files after backend initialization. Run:
