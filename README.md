@@ -7,7 +7,7 @@ You are tasked with setting up an infrastructure environment on Amazon Web Servi
 
 ## Task Check List
 
-- [x] Create an AWS infrastructure using Terraform to set up a cluster.
+- [x] Create an DO infrastructure using Terraform to set up a cluster.
 - [x] Deploy the following services onto the cluster:
     - [x] PostgreSQL
     - [x] Kafka
